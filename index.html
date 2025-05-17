@@ -1,55 +1,367 @@
-<html>
-    <head>
-        <title>JAkutenshi's room</title>
-        <style>
-            body {
-                background-image: url("images/index_bg.jpg");
-                background-size: cover;
-                background-repeat: no-repeat;
-		overflow: hidden;
-		height: 100%;
-            }
-            div {
-                background-color: rgba(0, 0, 0, 0.7);
-                padding: 10px;
-                margin: 5%;
-                color: lightblue;
-            }
-            footer {
-                text-align: right;
-                background-color: rgba(0, 0, 0, 0.7);
-                color: lightblue;
-                position: fixed;
-                bottom: 0px;
-		left: 0px;
-                width: 100%;
-            }
-        </style>
-    </head>
-    <body>
-        <div>
-            <p>Hello, here is the my contact and info page. My name is <b>Mikhail Efremov</b>, now I'm PhD student in SPbETU, Saint Petersburg, Russian Federation. Have BS and MS in Software Engineering. Now my research work relates to machine learning approaches for swarm robotic foraging problem.</p>
-            
-            <p>
-                Brief info about my toolkit and interests:
-                <ul>
-                    <li><del>Dell Inspirion N7110 since 2012. Love it.</del> Lenovo ThinkPad T480 with i5 CPU since 2019. Upgrading it.</li>
-                    <li><del>Arch Linux as main OS since 2016. Love it too.</del> Fedora Workstation since 2020. Just works.</li>
-                    <li><del>Custom workaround with i3-wm and vim-like utilities such as ranger.</del> GNOME and suits tools. Because Wayland without tearing.</li>
-                    <li>Most preferable language is Java. Also know C/C++ and Python as well.</li>
-                    <li>Current interests domain is robotics and ROS via C++. Also Reinforcement Learning via Pyhton.</li>
-                </ul>
-            </p>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-05-17 Sat 18:34 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Gorgeous title should be here</title>
+<meta name="author" content="Mikhail Efremov" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
 
-            <p>If you're have questions about my github project, please, open the issue if it possible. Thank you.</p>
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Gorgeous title should be here</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org59c945f">1. About</a></li>
+<li><a href="#org748793d">2. Brief info about my toolkit and interests:</a>
+<ul>
+<li><a href="#orgf22126d">2.1. Hardware</a></li>
+<li><a href="#org28abb18">2.2. Software</a>
+<ul>
+<li><a href="#orgf6e8efe">2.2.1. OSes</a></li>
+<li><a href="#org296b41b">2.2.2. WMs/DE</a></li>
+<li><a href="#org959c546">2.2.3. Editors</a></li>
+<li><a href="#orgda8bf1f">2.2.4. Programming languages</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org068c20a">3. Topics and domains</a>
+<ul>
+<li><a href="#org70ce569">3.1. Distributed systems</a></li>
+<li><a href="#org39de2dd">3.2. Reinforced Learning</a></li>
+<li><a href="#orgb201dbe">3.3. Federated learning</a></li>
+<li><a href="#orgca9d996">3.4. Emacs and Elisp</a></li>
+</ul>
+</li>
+<li><a href="#orgd782f42">4. What are there?</a></li>
+</ul>
+</div>
+</div>
 
-	    <p><a href="emacs/init.html">There</a> will be a little introduction and manual for GNU Emacs usage and setup for academic and open source development purposes~ So, I'm alive yet and stay tuned.</p>
-
-            <p>This page will be improved step by step. Stay tuned.</p>
-        </div>
-
-        <footer>
-            Background photo <a href="https://www.flickr.com/photos/23554843@N04/5406559521">"Tea"</a> by <a href="https://www.flickr.com/photos/23554843@N04">ienjoysushi</a> is licensed under <a href="https://creativecommons.org/licenses/by-sa/2.0/?ref=ccsearch&atype=rich">CC BY-SA 2.0</a>
-        </footer>
-    </body>
+<div id="outline-container-org59c945f" class="outline-2">
+<h2 id="org59c945f"><span class="section-number-2">1.</span> About</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Hello, here is the my contact and info page. My name is <b>Mikhail Efremov</b>, now I&rsquo;m kind of nomad. Have BS, MS and
+finished, but not defended PhD in Software Engineering and CS. My research work was related to machine learning
+approaches for swarm robotic foraging problem, then had evolved into federated learning, but now my most interested
+domain is distributed DBMS. I&rsquo;m contributing in Apache Ignite 3 and love it.
+</p>
+</div>
+</div>
+<div id="outline-container-org748793d" class="outline-2">
+<h2 id="org748793d"><span class="section-number-2">2.</span> Brief info about my toolkit and interests:</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orgf22126d" class="outline-3">
+<h3 id="orgf22126d"><span class="section-number-3">2.1.</span> Hardware</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li><del>Dell Inspirion N7110 since 2012. Love it.</del></li>
+<li>Lenovo ThinkPad T480 with i5 CPU since 2019. Upgrading it. Use as slow laptop for cuncurrency bug fixing. Also
+thinking about making it fully FOSS platform for server purposes. Mostly covered with dust now</li>
+<li>MacBook M3Max 36Gb since 2024. Not a fan, but it gives best performance with autonomy in my nomadic life. Working horse.</li>
+<li>Logitech Lift since 2024. Because wrists pain isn&rsquo;t a joke.</li>
+<li>HHKB as input since 2025. I&rsquo;m afraid of mac&rsquo;s keayboard so I need something robust.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org28abb18" class="outline-3">
+<h3 id="org28abb18"><span class="section-number-3">2.2.</span> Software</h3>
+<div class="outline-text-3" id="text-2-2">
+</div>
+<div id="outline-container-orgf6e8efe" class="outline-4">
+<h4 id="orgf6e8efe"><span class="section-number-4">2.2.1.</span> OSes</h4>
+<div class="outline-text-4" id="text-2-2-1">
+<ul class="org-ul">
+<li><del>Arch Linux as main OS since 2016. Love it too.</del></li>
+<li><del>Fedora Workstation since 2020. Just works.</del></li>
+<li><del>Ubuntu 22.** since 2022. Just works, but much longer.</del></li>
+<li>Debian 12 since 2023. Just works, but much longer, without SNAPs or other corpo things. Works on T480.</li>
+<li>MacOS 15 since 2024. Just works, I guess, mostly use as IDEA and Firefox launcher. Works on MacBook, obviously.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org296b41b" class="outline-4">
+<h4 id="org296b41b"><span class="section-number-4">2.2.2.</span> WMs/DE</h4>
+<div class="outline-text-4" id="text-2-2-2">
+<ul class="org-ul">
+<li><del>Custom workaround with i3-wm and vim-like utilities such as ranger.</del></li>
+<li>GNOME 40+ and suits tools. Because Wayland without tearing.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org959c546" class="outline-4">
+<h4 id="org959c546"><span class="section-number-4">2.2.3.</span> Editors</h4>
+<div class="outline-text-4" id="text-2-2-3">
+<ul class="org-ul">
+<li>JetBrains IDEA as Java developing. It&rsquo;s proprientary, it&rsquo;s paid but nothing better for Java yet. And this tool in
+particular makes Java most pleasant programming language for me.</li>
+<li>Emacs. Just curious. I tried it so many times since 2021, but sticks with it only when started to track job activities
+through org-file. In potential I believe that Emacs may be better than VSCode in all dimentions, but it requires
+crafting A LOT. DooM Emacs is just different editor, IMO, if you learned DooM Emacs it doesn&rsquo;t mean you learned
+Emacs. Learning Elisp and wish to be a Lisp wizard.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgda8bf1f" class="outline-4">
+<h4 id="orgda8bf1f"><span class="section-number-4">2.2.4.</span> Programming languages</h4>
+<div class="outline-text-4" id="text-2-2-4">
+<ul class="org-ul">
+<li>Java. Love from school days and Horstmann&rsquo;s &ldquo;Core Java&rdquo; books. Did CS degree labs, PhD research, first job backends
+and now Apache Ignite 3 with Java. I like that I shouldn&rsquo;t think about the language and use it as the most suit tool
+for my real-world problems to solve.</li>
+<li>All other languages like C/C++, Python, OCaml, Common Lisp, R and so on that I learned ages ago or tried once but forgot.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org068c20a" class="outline-2">
+<h2 id="org068c20a"><span class="section-number-2">3.</span> Topics and domains</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org70ce569" class="outline-3">
+<h3 id="org70ce569"><span class="section-number-3">3.1.</span> Distributed systems</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+The ocean to discover.
+</p>
+</div>
+</div>
+<div id="outline-container-org39de2dd" class="outline-3">
+<h3 id="org39de2dd"><span class="section-number-3">3.2.</span> Reinforced Learning</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+The only ML domain that doesn&rsquo;t hype now because of complexity. But I believe that future of massive autonomous robots
+swarms will be arised from there.
+</p>
+</div>
+</div>
+<div id="outline-container-orgb201dbe" class="outline-3">
+<h3 id="orgb201dbe"><span class="section-number-3">3.3.</span> Federated learning</h3>
+<div class="outline-text-3" id="text-3-3">
+<p>
+My PhD theme and again not too hyped tech that behind of your on-device AI things.
+</p>
+</div>
+</div>
+<div id="outline-container-orgca9d996" class="outline-3">
+<h3 id="orgca9d996"><span class="section-number-3">3.4.</span> Emacs and Elisp</h3>
+<div class="outline-text-3" id="text-3-4">
+<p>
+Obsession and guilty pleasure, source of procrastinating. I believe that if there were interest from cool developers
+with huge expirience and motivation we should already have an absolutely FOSS editor and IDE, most user-friendly and
+blazing fast. But instead we have VSCode popularity. &ldquo;Persist in the doomed world you have created&rdquo;.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd782f42" class="outline-2">
+<h2 id="orgd782f42"><span class="section-number-2">4.</span> What are there?</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+From er.. ages ago there was a pretty image of a teapot, but it weight several MBs. I removed it. Also I removed CSS and
+this HTML is generated from the org file. I wish there will be kind of text blog about distributed algorithms and
+emacs. Stay tuned. Still.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Mikhail Efremov</p>
+<p class="date">Created: 2025-05-17 Sat 18:34</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
 </html>

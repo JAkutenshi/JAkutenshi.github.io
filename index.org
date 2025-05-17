@@ -1,0 +1,53 @@
+#+TITLE: Gorgeous title should be here
+
+* About
+Hello, here is the my contact and info page. My name is *Mikhail Efremov*, now I'm kind of nomad. Have BS, MS and
+finished, but not defended PhD in Software Engineering and CS. My research work was related to machine learning
+approaches for swarm robotic foraging problem, then had evolved into federated learning, but now my most interested
+domain is distributed DBMS. I'm contributing in Apache Ignite 3 and love it.
+* Brief info about my toolkit and interests:
+** Hardware
+- +Dell Inspirion N7110 since 2012. Love it.+
+- Lenovo ThinkPad T480 with i5 CPU since 2019. Upgrading it. Use as slow laptop for cuncurrency bug fixing. Also
+  thinking about making it fully FOSS platform for server purposes. Mostly covered with dust now
+- MacBook M3Max 36Gb since 2024. Not a fan, but it gives best performance with autonomy in my nomadic life. Working horse.
+- Logitech Lift since 2024. Because wrists pain isn't a joke.
+- HHKB as input since 2025. I'm afraid of mac's keayboard so I need something robust.
+** Software
+*** OSes
+- +Arch Linux as main OS since 2016. Love it too.+
+- +Fedora Workstation since 2020. Just works.+
+- +Ubuntu 22.** since 2022. Just works, but much longer.+
+- Debian 12 since 2023. Just works, but much longer, without SNAPs or other corpo things. Works on T480.
+- MacOS 15 since 2024. Just works, I guess, mostly use as IDEA and Firefox launcher. Works on MacBook, obviously.
+*** WMs/DE
+- +Custom workaround with i3-wm and vim-like utilities such as ranger.+
+-  GNOME 40+ and suits tools. Because Wayland without tearing.
+*** Editors
+- JetBrains IDEA as Java developing. It's proprientary, it's paid but nothing better for Java yet. And this tool in
+  particular makes Java most pleasant programming language for me.
+- Emacs. Just curious. I tried it so many times since 2021, but sticks with it only when started to track job activities
+  through org-file. In potential I believe that Emacs may be better than VSCode in all dimentions, but it requires
+  crafting A LOT. DooM Emacs is just different editor, IMO, if you learned DooM Emacs it doesn't mean you learned
+  Emacs. Learning Elisp and wish to be a Lisp wizard.
+*** Programming languages
+- Java. Love from school days and Horstmann's "Core Java" books. Did CS degree labs, PhD research, first job backends
+  and now Apache Ignite 3 with Java. I like that I shouldn't think about the language and use it as the most suit tool
+  for my real-world problems to solve.
+- All other languages like C/C++, Python, OCaml, Common Lisp, R and so on that I learned ages ago or tried once but forgot.
+* Topics and domains
+** Distributed systems
+The ocean to discover.
+** Reinforced Learning
+The only ML domain that doesn't hype now because of complexity. But I believe that future of massive autonomous robots
+swarms will be arised from there.
+** Federated learning
+My PhD theme and again not too hyped tech that behind of your on-device AI things.
+** Emacs and Elisp
+Obsession and guilty pleasure, source of procrastinating. I believe that if there were interest from cool developers
+with huge expirience and motivation we should already have an absolutely FOSS editor and IDE, most user-friendly and
+blazing fast. But instead we have VSCode popularity. "Persist in the doomed world you have created".
+* What are there?
+From er.. ages ago there was a pretty image of a teapot, but it weight several MBs. I removed it. Also I removed CSS and
+this HTML is generated from the org file. I wish there will be kind of text blog about distributed algorithms and
+emacs. Stay tuned. Still.
